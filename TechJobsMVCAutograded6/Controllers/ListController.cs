@@ -33,11 +33,7 @@ public class ListController : Controller
     {
         ViewBag.columns = ColumnChoices;
         ViewBag.tableChoices = TableChoices;
-        ViewBag.employers = JobData.GetAllEmployers();
-        ViewBag.locations = JobData.GetAllLocations();
-        ViewBag.positionTypes = JobData.GetAllPositionTypes();
-        ViewBag.skills = JobData.GetAllCoreCompetencies();
-
+        
         return View();
     }
 

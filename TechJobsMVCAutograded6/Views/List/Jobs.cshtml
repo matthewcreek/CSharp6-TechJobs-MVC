@@ -3,7 +3,7 @@
     <h1>@ViewBag.title</h1>
 
     @* TODO #1 - Use a loop to display job results in a table. *@
-    @* <table class="job-listing">
+    @* <table class="table table-striped mb-5">
             @foreach(var job in ViewBag.jobs)
             {
                 <tr>
@@ -23,7 +23,7 @@
     @* Alternate table option: *@
     @foreach (var job in ViewBag.jobs)
     {
-        <table class="job-listing">
+        <table class="table table-striped mb5">
             <tr>
                 <th>ID</th>
                 <td>@job.Id</td>
